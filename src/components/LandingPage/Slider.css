@@ -1,0 +1,161 @@
+.Slider {
+  padding: 0 5%;
+  font-family: var(--poppins);
+  margin-top: 100px;
+}
+
+.sliderItem {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.ladyWithComputer {
+  width: 100%;
+  object-fit: contain;
+}
+
+.tag-line {
+  color: var(--dark-orange);
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.line-1 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.orangeBold {
+  font-weight: 600;
+  color: var(--orange);
+}
+
+.bold-line {
+  font-family: var(--montserrat);
+  font-weight: 600;
+  font-size: 47px;
+}
+
+.bottom-line {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 25px 0 60px 0;
+}
+
+.sliderItem .create-a-card-button {
+  margin: 0;
+}
+
+.SliderDots {
+  margin: 300px 0 300px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  margin: 0 5px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  background-color: #c4c4c4;
+}
+
+.dot.activeDot {
+  background-color: var(--dark-orange);
+}
+
+@media screen and (max-width: 1500px) {
+  .SliderDots {
+    margin: 250px 0 100px 0;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .SliderDots {
+    margin: 150px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tag-line {
+    font-size: 20px;
+  }
+
+  .line-1 {
+    font-size: 20px;
+  }
+
+  .bold-line {
+    font-size: 40px;
+  }
+  .bottom-line {
+    font-size: 17px;
+  }
+
+  .SliderDots {
+    margin: 100px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .Slider {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .line-1 {
+    margin-top: 25px;
+  }
+
+  .bottom-line {
+    margin: 20px 0 30px;
+  }
+
+  .sliderItem .create-a-card-button {
+    font-size: 15px;
+    padding: 10px 25px;
+  }
+
+  .sliderItem {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ladyWithComputer {
+    align-self: flex-end;
+    width: 350px;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .tag-line {
+    font-size: 17px;
+  }
+
+  .line-1 {
+    font-size: 17px;
+  }
+
+  .bold-line {
+    font-size: 34px;
+  }
+  .bottom-line {
+    font-size: 14px;
+  }
+  .dot {
+    height: 12px;
+    width: 12px;
+  }
+}

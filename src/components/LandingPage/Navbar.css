@@ -1,0 +1,127 @@
+.navbar {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  width: 200px;
+  object-fit: contain;
+}
+
+.menu {
+  font-family: var(--poppins);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.menuIcon {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  color: var(--black);
+  display: none;
+}
+
+.menuItem {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--dark-orange);
+}
+
+.closeIcon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  color: var(--dark-orange);
+}
+
+.create-a-card-button {
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 17px 47px;
+  color: var(--white);
+  background-color: var(--orange);
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.menu.active {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 111;
+}
+
+@media screen and (max-width: 1250px) {
+  .navbar .logo {
+    width: 150px;
+  }
+
+  .menu {
+    gap: 30px;
+  }
+
+  .menuItem {
+    font-size: 17px;
+  }
+
+  .menu .create-a-card-button {
+    font-size: 17px;
+    padding: 13px 43px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    padding: 2.5rem;
+  }
+
+  .navbar .logo {
+    width: 150px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .menuItem {
+    font-size: 15px;
+  }
+
+  .menu .create-a-card-button {
+    font-size: 15px;
+    padding: 10px 40px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .menu {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+}

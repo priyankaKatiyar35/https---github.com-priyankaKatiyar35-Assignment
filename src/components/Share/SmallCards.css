@@ -1,0 +1,61 @@
+.smallCards {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smallCardContainer {
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  border: 2px solid #ccd0f9;
+  border-radius: 20px;
+}
+
+.smallCard {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.smallCard img {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.smallCard.active {
+  background: #ccd0f9;
+}
+
+@media screen and (max-width: 700px) {
+  .smallCard {
+    padding: 8px 32px;
+    gap: 6px;
+  }
+  .smallCard img {
+    height: 35px;
+    width: 35px;
+  }
+  .smallCard p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .smallCard {
+    padding: 6px 28px;
+    gap: 5px;
+  }
+  .smallCard img {
+    height: 30px;
+    width: 30px;
+  }
+  .smallCard p {
+    font-size: 10px;
+  }
+}

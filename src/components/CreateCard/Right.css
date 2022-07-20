@@ -1,0 +1,63 @@
+.rightTitle {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 50px 0;
+}
+
+.socialsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  gap: 30px;
+}
+
+.socialBox {
+  height: 150px;
+  width: 150px;
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    rgba(238, 153, 13, 0) 0%,
+    rgba(246, 183, 78, 0.47697) 44.06%,
+    rgba(252, 204, 124, 0.814583) 75.31%,
+    #ffd795 100%
+  );
+  border: 1px solid #ee990d;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.socialLogoContainer {
+  height: 30%;
+  width: 30%;
+}
+
+.socialLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 900px) {
+  .socialBox {
+    height: 120px;
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .socialBox {
+    height: 100px;
+    width: 100px;
+  }
+  .socialName {
+    font-size: 11px;
+  }
+}

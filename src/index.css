@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --poppins: "Poppins", sans-serif;
+  --orange: #f2a365;
+  --dark-orange: #fe7624;
+  --white: #f5f5f5;
+  --black: #1f1f1f;
+}
+
+body {
+  background-color: #f6f6f6;
+}
