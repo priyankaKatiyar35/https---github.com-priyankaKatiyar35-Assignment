@@ -1,6 +1,5 @@
 import React from "react";
 
-// Representing each single social card
 const Social = ({ element }) => {
   let { logo, name } = element;
   return (

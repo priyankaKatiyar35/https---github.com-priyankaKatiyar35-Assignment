@@ -1,13 +1,11 @@
 import React from "react";
 
-// Importing components
 import Navbar from "./Navbar";
 import Slider from "./Slider";
 import IPhoneSection from "./IPhoneSection";
 
-// Importing assets
 import "./LandingPage.css";
-import UpperRight from "../../assets/UpperRight.png";
+import UpperRight from "../../imeges/UpperRight.png";
 
 const LandingPage = () => {
   return (

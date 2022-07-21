@@ -1,19 +1,15 @@
 import { Link } from "react-router-dom";
 
-// Icons
 import { BiArrowBack } from "react-icons/bi";
 import { useEffect } from "react";
 
-// Importing Components
 import Cards from "./Cards";
 import SmallCards from "./SmallCards";
 
-// Assets
-import Logo from "../../assets/Logo.png";
+import Logo from "../../imeges/Logo.png";
 import "./Share.css";
 
 const Share = () => {
-  // To make body scrollable, when component loads
   useEffect(() => {
     document.getElementById("body").style.overflow = "";
   }, []);

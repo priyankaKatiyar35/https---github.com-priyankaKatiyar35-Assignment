@@ -1,35 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// Importing Components
 import Menu from "./Menu";
 
-// assets
-import logo from "../../assets/Logo.png";
+import logo from "../../imeges/Logo.png";
 import "./Navbar.css";
 
-// Icons
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Navbar = () => {
-  const [navActive, setActive] = useState(false); // For keep track of navigation
-
-  // If navigation menu is open while in mobile view then making body non scrollable
+  const [navActive, setActive] = useState(false);
   if (navActive) {
     document.getElementById("body").style.overflow = "hidden";
   } else {
     document.getElementById("body").style.overflow = "";
   }
 
-  // Navigation Items
   const menu = ["features", "pricing", "business", "smart card"];
 
   return (
     <nav className="navbar">
       <img className="logo" src={logo} alt="pocket" />
 
-      {/* Hamburger Menu */}
       {!navActive && (
         <HiMenuAlt3 className="menuIcon" onClick={() => setActive(true)} />
       )}
@@ -40,7 +33,6 @@ const Navbar = () => {
             onClick={() => setActive(false)}
           />
         )}
-        {/* Navigation bar */}
         {menu.map((menuItem) => (
           <Menu key={menuItem} item={menuItem} />
         ))}

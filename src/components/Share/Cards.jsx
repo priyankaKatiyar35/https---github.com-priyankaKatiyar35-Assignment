@@ -1,21 +1,17 @@
-// Assets
-import card0 from "../../assets/card-0.png";
-import card1 from "../../assets/card-1.png";
-import card2 from "../../assets/card-2.png";
-import qrCode from "../../assets/qr-code.png";
+import card0 from "../../imeges/card-0.png";
+import card1 from "../../imeges/card-1.png";
+import card2 from "../../imeges/card-2.png";
+import qrCode from "../../imeges/qr-code.png";
 
 import "./Cards.css";
 
-// Icons
 import { MdEdit } from "react-icons/md";
 import { BsPlusCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
-// Simple card component
 const Cards = () => {
   return (
     <div className="cards">
-      {/* -------------- Card 1 -------------- */}
       <div className="card">
         <div className="title">Your Cards</div>
         <div className="cardContainer">
@@ -35,7 +31,6 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      {/* -------------- Card 2 -------------- */}
       <div className="card">
         <div className="title">Share your card</div>
         <div className="cardContainer">
@@ -46,7 +41,6 @@ const Cards = () => {
           </div>
         </div>
       </div>
-      {/* -------------- Card 3 -------------- */}
       <div className="card">
         <div className="title">Your Cards</div>
         <div className="cardContainer">

@@ -1,7 +1,5 @@
 import React from "react";
 import "./Right.css";
-
-// Importing Required Icons
 import {
   FaDiscord,
   FaLinkedin,
@@ -13,13 +11,10 @@ import {
   FaPaypal,
   FaGithubSquare,
 } from "react-icons/fa";
-
-// Importing Component
 import Social from "./Social";
 
-// Representing Right side of Create Card page
+
 const Right = () => {
-  // Data for each social card
   const socials = [
     { id: 1, logo: <FaDiscord className="socialLogo" />, name: "Discord" },
     { id: 2, logo: <FaLinkedin className="socialLogo" />, name: "LinkedIn" },

@@ -1,6 +1,5 @@
-// Importing Assets
-import iPhone from "../../assets/iPhone.png";
-import iPhoneBack from "../../assets/iPhoneBack.png";
+import iPhone from "../../imeges/iPhone.png";
+import iPhoneBack from "../../imeges/iPhoneBack.png";
 import "./iPhoneSection.css";
 
 const IPhoneSection = () => {

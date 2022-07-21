@@ -1,5 +1,5 @@
 // Asset
-import uploadImage from "../../assets/uploadImage.png";
+import uploadImage from "../../imeges/uploadImage.png";
 import "./Left.css";
 
 // Icon

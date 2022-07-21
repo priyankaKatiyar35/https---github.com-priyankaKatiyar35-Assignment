@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-// Assets
 import "./Slider.css";
-import LadyWithComputer from "../../assets/LadyWithComputer.png";
+import LadyWithComputer from "../../imeges/LadyWithComputer.png";
 
-// Active Slider Item
 const SliderItem = ({ allLines, LadyWithComputer }) => {
   let { line_1, bold_line, bottom_line } = allLines;
   line_1 = line_1.split(" ");
@@ -28,7 +26,6 @@ const SliderItem = ({ allLines, LadyWithComputer }) => {
   );
 };
 
-// Slider Dots to navigate to different slider
 const SliderDots = ({ allData, active, gotoThisItem }) => {
   return (
     <div className="SliderDots">
@@ -46,14 +43,11 @@ const SliderDots = ({ allData, active, gotoThisItem }) => {
 };
 
 const Slider = () => {
-  const [index, setActiveStep] = useState(0); // To keep track of which slider is active
-
-  // For setting slider
+  const [index, setActiveStep] = useState(0); 
   const gotoThisItem = (index) => {
     setActiveStep(index);
   };
 
-  // Data for slider
   const data = [
     {
       tag_line: "Make your professional life easy",
@@ -83,9 +77,9 @@ const Slider = () => {
 
   return (
     <div className="Slider">
-      {/* Slider Items */}
+      
       <SliderItem allLines={data[index]} LadyWithComputer={LadyWithComputer} />
-      {/* Slider Dots */}
+      
       <SliderDots allData={data} active={index} gotoThisItem={gotoThisItem} />
     </div>
   );
